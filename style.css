@@ -1,7 +1,7 @@
-.name-container{
+/* PC styles */
+.business-card{
     font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
-    background-color: white;
-    width: 80%;
+    width: 690px;
     height: auto;
     text-align: center;
     position: absolute;
@@ -9,14 +9,17 @@
     left: 52%;
     bottom: auto;
     transform: translate(-50%, 0%);
-    font-size: 3.5vw;
+    font-size: 24px;
+    background-color: white;
 }
+
 .section-title {
     background-color: white;
 }
 
 body {
   background-image: url("backGroundPicture1.jpg");
+  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -30,4 +33,32 @@ body {
 
 .contact-info{
     text-decoration: none;
+}
+
+.desktop-footer{
+    display : block;
+}
+.mobile-footer{
+    display : none;
+}
+@media screen and (max-width: 768px) { /* Mobile styles */
+    .desktop-footer{
+        display : none;
+    }
+    .mobile-footer{
+        display : block;
+    }
+    .business-card{
+    font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    width: 80%;
+    height: auto;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 52%;
+    bottom: auto;
+    transform: translate(-50%, 0%);
+    font-size: 3.5vw;
+    background-color: white;
+    }
 }
