@@ -1,3 +1,3 @@
-# soooooramin
+# README
 
-this is my homepage.
+これは私がViteとReact、Tailwindcss、TypeScriptを学習しながら作成したホームページです。
