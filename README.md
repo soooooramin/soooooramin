@@ -1,3 +1,5 @@
-# README
+# soooooramin
 
-これは私がViteとReact、Tailwindcss、TypeScriptを学習しながら作成したホームページです。
+セキュリティを志す普通未満の大学生
+
+[HP](https://soraminato.dev)
