@@ -1,0 +1,23 @@
+---
+const { frontmatter } = Astro.props;
+import Header from '../components/header.astro'
+---
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{frontmatter.title}</title>
+</head>
+<body>
+    <header>
+        <Header />
+    </header>
+    <main>
+        <h1>{frontmatter.title}</h1>
+        <p>投稿日: {frontmatter.date}</p>
+        <slot />
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
