@@ -1,23 +1,20 @@
 ---
+import BaseLayout from './BaseLayout.astro'
+
 const { frontmatter } = Astro.props;
-import Header from '../components/header.astro'
 ---
-<html lang="ja">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>{frontmatter.title}</title>
-</head>
-<body>
-    <header>
-        <Header />
-    </header>
-    <main>
-        <h1>{frontmatter.title}</h1>
-        <p>投稿日: {frontmatter.date}</p>
-        <slot />
-    </main>
-    <footer>
-    </footer>
-</body>
-</html>
+
+<BaseLayout title={frontmatter.title} description={frontmatter.description}>
+    <article class="select-none">
+        <header class="mb-8 border-b border-slate-200 pb-6">
+            <h1 class="mt-2 text-3xl font-bold text-slate-900">{frontmatter.title}</h1>
+            <p class="mt-2 text-slate-500">{frontmatter.description}</p>
+            <time datetime={frontmatter.date.toISOString()} class="text-sm text-slate-400">
+                投稿日: {frontmatter.date.toLocaleDateString('ja-JP')}
+            </time>
+        </header>
+        <div class="prose prose-slate max-w-none prose-a:text-sky-600">
+            <slot />
+        </div>
+    </article>
+</BaseLayout>

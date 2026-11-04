@@ -1,1 +1,20 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+	--font-sans: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic UI", Meiryo, system-ui, sans-serif;
+}
+
+@layer base {
+	html {
+		@apply bg-white text-slate-800 antialiased;
+	}
+
+	body {
+		@apply flex min-h-screen flex-col;
+	}
+
+	::selection {
+		@apply bg-sky-100 text-sky-900;
+	}
+}
