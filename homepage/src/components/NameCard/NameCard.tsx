@@ -39,7 +39,7 @@ export function PCNameCard() {
           <a href="https://github.com/soooooramin">GitHub soooooramin</a>
           <a href="https://www.linkedin.com/in/sora-minato">LinkedIn Sora Minato</a>
           <a href="https://qiita.com/soooooramin">Qiita soooooramin</a>
-          <a href="https://soraminato.dev/blog/">Blog</a>
+          <a href="./blog/">Blog</a>
         </div>
     </div>
   )
